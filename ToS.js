@@ -37,7 +37,7 @@ function draw() {
     fill(255,255,255);
     text("Discover Your Inner Fantasy", windowWidth*.5, windowHeight*.1);
     if (showTerms == true && acceptors < 10) {
-        fill('rgba(20,30,60,.25)');
+        fill('rgba(20,30,60,100)');
         rect(windowWidth*.20, windowHeight*.25, windowWidth*.6, windowHeight*.5, 10, 10, 10, 10);
         fill(255, 255, 255);
         textAlign(CENTER);
