@@ -56,45 +56,12 @@ function draw() {
 
 function termsTime() {
     showTerms = true;
-    listening = true;
-    myRec = new p5.SpeechRec();
-    myRec.onResult = speechAccept;
-    myRec.continuous = true;
-    myRec.onError = errorLog;
-    myRec.start();
 }
 
 function errorLog() {
     console.log('error, restarting');
-    myRec = new p5.SpeechRec();
-    myRec.continuous = true;
-    myRec.onResult = speechAccept;
-    myRec.onError = errorLog;
-    myRec.start();
 }
 
-function speechAccept() {
-    if (listening == true) {
-        if ( myRec.resultValue == true ) {
-            console.log('got a result');
-            listening = false;
-            result = myRec.resultString;
-            console.log(result);
-
-            if ( yessir.test(result) ) {
-                // accepted
-                acceptOne();
-                return
-            } else if ( nosir.test(result) ){
-                deniedHard();
-                return
-            } else {
-                tryAgain();
-                return
-            }
-        }
-    }
-}
 
 function acceptOne() {
     console.log('accepted');
@@ -107,6 +74,8 @@ function acceptOne() {
 
 function deniedHard() {
     console.log('denied');
+    denied = true;
+    setTimeout( function () { window.location = 'http://localhost:8000';} , 7000 );
 }
 
 function tryAgain() {
