@@ -67,9 +67,6 @@ function acceptOne() {
     console.log('accepted');
     acceptors++;
     listening = true;
-    // myRec = new p5.SpeechRec();
-    // myRec.onResult = speechAccept;
-    // myRec.start();
 }
 
 function deniedHard() {
