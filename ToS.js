@@ -81,7 +81,7 @@ function draw() {
         textAlign(CENTER);
         textSize(32);
         textFont(lucida);
-        text("Note to Self:", windowWidth*.5, windowHeight*.33);
+        text("Access Denied:", windowWidth*.5, windowHeight*.33);
         textSize(16);
         textAlign(LEFT);
         text("It appears you have not accepted the DesignCraft Terms of Service, and that we cannot reach our servers to file this issue. If this error continues, please report ref. 23094 to iamadatapoint.com.", windowWidth*.35, windowHeight*.4, windowWidth*.30, windowHeight*.3);
