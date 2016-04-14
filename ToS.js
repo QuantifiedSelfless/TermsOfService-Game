@@ -9,14 +9,12 @@ socket.on('rfid', function (data) {
 
 socket.on('button1', function (data) {
         acceptOne();
-        console.log("accept");
 
 });
 
 socket.on('button2', function (data) {
     //Deny
     deniedHard();
-    console.log('deny');
 });
 
 var accept_data = [
@@ -100,7 +98,6 @@ function acceptOne() {
 }
 
 function deniedHard() {
-    console.log('denied');
     denied = true;
     setTimeout( function () { window.location = 'http://localhost:8000';} , 7000 );
 }
