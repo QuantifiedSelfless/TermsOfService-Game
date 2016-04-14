@@ -8,13 +8,14 @@ socket.on('rfid', function (data) {
 });
 
 socket.on('button1', function (data) {
-        //Accept
+        acceptOne();
         console.log("accept");
 
 });
 
 socket.on('button2', function (data) {
     //Deny
+    deniedHard();
     console.log('deny');
 });
 
@@ -89,10 +90,6 @@ function draw() {
 
 function termsTime() {
     showTerms = true;
-}
-
-function errorLog() {
-    console.log('error, restarting');
 }
 
 
