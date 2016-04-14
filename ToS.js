@@ -50,7 +50,7 @@ function draw() {
     textFont(akashi);
     fill(255,255,255);
     text("Discover Your Inner Fantasy", windowWidth*.5, windowHeight*.1);
-    if (showTerms == true && acceptors < 8) {
+    if (showTerms == true && acceptors < 8 && denied ==false) {
         fill('rgba(20,30,60,100)');
         rect(windowWidth*.30, windowHeight*.25, windowWidth*.4, windowHeight*.5, 10, 10, 10, 10);
         fill(255, 255, 255);
@@ -61,7 +61,7 @@ function draw() {
         textSize(16);
         textAlign(LEFT);
         text("To play this game, DesignCraft asks that you " + accept_data[acceptors].rights + "\n\nPlease press the GREEN button to accept or the RED to deny", windowWidth*.35, windowHeight*.4, windowWidth*.30, windowHeight*.3);
-    } else if (showTerms == true && acceptors == 8) {
+    } else if (showTerms == true && acceptors == 8 && denied == false) {
         fill('rgba(20,30,60,100)');
         rect(windowWidth*.30, windowHeight*.25, windowWidth*.4, windowHeight*.5, 10, 10, 10, 10);
         fill(255, 255, 255);
