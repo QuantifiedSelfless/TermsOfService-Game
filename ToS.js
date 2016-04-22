@@ -18,7 +18,7 @@ socket.on('button2', function (data) {
 });
 
 var accept_data = [
-    {rights: "accept to have basic server logs storing your IP Adress, Cookies, User-Agent, and Device Identifiers throughout the use of this Companion."},
+    {rights: "accept to have basic server logs storing your IP Address, Cookies, User-Agent, and Device Identifiers throughout the use of this Companion."},
     {rights: "accept having a Cookie placed in your browser that can be used for targeted services and advertisements."},
     {rights: "accept that even upon deletion of The Cookie from your browser or devices, that they will continue to use Browser and Device Identifiers so that they can have a profile on you."},
     {rights: "accept to have samples of your voiced used in their AI training data sets."},
