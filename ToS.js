@@ -7,12 +7,12 @@ socket.on('rfid', function (data) {
     setTimeout(function () {window.location = "http://localhost:8000"}, 2000)
 });
 
-socket.on('button3', function (data) {
+socket.on('button2', function (data) {
         acceptOne();
 
 });
 
-socket.on('button2', function (data) {
+socket.on('button3', function (data) {
     //Deny
     deniedHard();
 });
