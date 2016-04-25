@@ -69,7 +69,7 @@ function draw() {
         text("Note to Self:", windowWidth*.5, windowHeight*.33);
         textSize(16);
         textAlign(LEFT);
-        text("Do not play this game. I keep seeming to forget that I've discovered that through this Companion DesignCraft is brainwashing me. If I do not believe this message, look for the explanation I've left myself on the book shelf. This Companion will now terminate.", windowWidth*.35, windowHeight*.4, windowWidth*.30, windowHeight*.3);
+        text("Do not play this game. I keep seeming to forget that I've discovered that through this Companion DesignCraft is brainwashing me. If I do not believe this message, look for the explanation I've left myself on the book shelf. This Companion will now terminate.\n\n-Amelia", windowWidth*.35, windowHeight*.4, windowWidth*.30, windowHeight*.3);
         setTimeout(deniedHard, 10000);
         //Amelia's note
     } else if (showTerms == true && denied == true) {
